@@ -19,15 +19,24 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
-  background-color: #fafafa;
   padding: 24px;
   box-sizing: border-box;
+  height: 100%;
 }
 
-html,
-body,
-#app {
-  height: 100%;
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+input {
+  font-size: 16px;
 }
 
 * {
